@@ -1,94 +1,527 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Terms & Conditions - xyzsites Affiliate Network</title>
-  <meta name="description" content="Official Terms & Conditions and Affiliate Disclosure for the xyzsites network.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="index.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>@xyzsites</title>
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1b1e 0%, #0f0f11 100%);
+            min-height: 100vh;
+            padding: 8px;
+            color: #e4e5e7;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(44, 45, 50, 0.95);
+            backdrop-filter: blur(0px);
+            border-radius: 28px;
+            padding: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: 1px solid rgba(62, 63, 68, 0.8);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 24px;
+            color: #9ab7d7;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            padding-bottom: 16px;
+            border-bottom: 3px solid #3e3f44;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .folder-item {
+            background: #222327;
+            border-radius: 24px;
+            transition: all 0.2s ease;
+            border: 2px solid #3e3f44;
+            overflow: hidden;
+        }
+
+        .folder-item:active {
+            transform: scale(0.98);
+        }
+
+        .folder-link {
+            display: flex;
+            align-items: center;
+            padding: 24px 28px;
+            text-decoration: none;
+            color: #e4e5e7;
+            gap: 24px;
+        }
+
+        .folder-icon {
+            font-size: 56px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .folder-info {
+            flex: 1;
+        }
+
+        .folder-name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #9ab7d7;
+            margin-bottom: 12px;
+            word-break: break-word;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .external-icon {
+            font-size: 20px;
+            opacity: 0.7;
+        }
+
+        .folder-meta {
+            font-size: 20px;
+            color: #8f9095;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .folder-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .folder-arrow {
+            color: #6b8caf;
+            font-size: 42px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+
+        .folder-item:active .folder-arrow {
+            transform: translateX(8px);
+        }
+
+        /* Icons for different folder types */
+        .icon-folder { color: #9ab7d7; }
+        .icon-movies { color: #ff6b6b; }
+        .icon-music { color: #4ecdc4; }
+        .icon-pics { color: #feca57; }
+        .icon-apks { color: #ff9ff3; }
+        .icon-thikr { color: #54a0ff; }
+        .icon-ghost { color: #6b6c71; opacity: 0.5; }
+
+        .no-items {
+            text-align: center;
+            padding: 60px;
+            background: #222327;
+            border-radius: 24px;
+            color: #8f9095;
+            font-size: 20px;
+            border: 2px dashed #3e3f44;
+        }
+
+        /* Footer Social Section */
+        .footer-social {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 3px solid #3e3f44;
+        }
+
+        .footer-social h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #9ab7d7;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .social-tiles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 12px;
+            background: #222327;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 2px solid #3e3f44;
+            color: #e4e5e7;
+        }
+
+        .tile i {
+            font-size: 36px;
+        }
+
+        .tile span {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .tile:active {
+            transform: scale(0.96);
+        }
+
+        /* Social tile colors */
+        .tile.youtube:hover { background: #ff0000; border-color: #ff0000; color: white; }
+        .tile.whatsapp:hover { background: #25d366; border-color: #25d366; color: white; }
+        .tile.instagram:hover { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); border-color: #fd1d1d; }
+        .tile.facebook:hover { background: #1877f2; border-color: #1877f2; color: white; }
+        .tile.x:hover { background: #000000; border-color: #ffffff; color: white; }
+        .tile.github:hover { background: #333; border-color: #6e5494; color: white; }
+
+        /* Social tile icons color */
+        .tile.youtube i { color: #ff0000; }
+        .tile.whatsapp i { color: #25d366; }
+        .tile.instagram i { color: #fd1d1d; }
+        .tile.facebook i { color: #1877f2; }
+        .tile.x i { color: #ffffff; }
+        .tile.github i { color: #6e5494; }
+        
+        .tile:hover i { color: white; }
+
+        footer {
+            text-align: center;
+            font-size: 16px;
+            color: #6b6c71;
+            padding-top: 20px;
+            font-weight: 500;
+        }
+
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            body {
+                padding: 40px;
+            }
+
+            .container {
+                padding: 40px;
+            }
+
+            h1 {
+                font-size: 48px;
+                margin-bottom: 32px;
+                text-align: left;
+            }
+
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .folder-link {
+                padding: 32px 36px;
+                gap: 30px;
+            }
+
+            .folder-icon {
+                font-size: 72px;
+                min-width: 100px;
+            }
+
+            .folder-name {
+                font-size: 42px;
+                margin-bottom: 16px;
+            }
+
+            .external-icon {
+                font-size: 28px;
+            }
+
+            .folder-meta {
+                font-size: 24px;
+                gap: 32px;
+            }
+
+            .folder-arrow {
+                font-size: 56px;
+            }
+
+            .folder-item:hover {
+                transform: translateY(-4px);
+                border-color: #6b8caf;
+                box-shadow: 0 10px 25px rgba(107, 140, 175, 0.3);
+            }
+
+            .folder-item:hover .folder-arrow {
+                transform: translateX(10px);
+            }
+
+            .footer-social h3 {
+                font-size: 32px;
+                text-align: left;
+            }
+
+            .social-tiles {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 20px;
+            }
+
+            .tile {
+                padding: 24px 16px;
+            }
+
+            .tile i {
+                font-size: 48px;
+            }
+
+            .tile span {
+                font-size: 18px;
+            }
+
+            .tile:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            .folder-link {
+                padding: 18px 20px;
+                gap: 16px;
+            }
+            
+            .folder-icon {
+                font-size: 44px;
+                min-width: 60px;
+            }
+            
+            .folder-name {
+                font-size: 24px;
+            }
+            
+            .external-icon {
+                font-size: 16px;
+            }
+            
+            .folder-meta {
+                font-size: 14px;
+                gap: 16px;
+            }
+            
+            .folder-arrow {
+                font-size: 32px;
+            }
+            
+            .social-tiles {
+                gap: 10px;
+            }
+            
+            .tile {
+                padding: 14px 8px;
+            }
+            
+            .tile i {
+                font-size: 28px;
+            }
+            
+            .tile span {
+                font-size: 12px;
+            }
+            
+            .footer-social h3 {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Floating WhatsApp -->
-  <a href="https://whatsapp.com/channel/0029VbBFrYi6rsQwfs6IJi1S" class="wa-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <div class="container">
-
-    <!-- Hero Section -->
-    <section class="hero" style="padding:120px 20px 80px; background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1586953208448-03f42a981f79?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover;">
-      <h1><i class="fas fa-scale-balanced"></i> xyzsites Affiliate Network </h1>
-      <p class="big" style="font-size:1.4rem; margin-top:20px;">Terms & Conditions</p>
-      <p style="max-width: 600px; margin: 20px auto; opacity: 0.9;">This agreement governs your interaction with all brands and affiliates within the xyzsites network.</p>
-      <!-- You can add a generic "Join" link later, or keep it for the homepage -->
-      <a href="https://xyzsites.github.io/" class="cta-big" style="margin-top:30px; background:#4ecdc4;">
-        <i class="fas fa-home"></i> Back to Homepage
-      </a>
-    </section>
-
-    <!-- Main Terms Content -->
-    <section class="terms-content" style="background:rgba(255,255,255,0.05); padding:50px; border-radius:20px; margin:40px 0; backdrop-filter:blur(10px);">
-      
-      <h2 style="text-align:center; color:#25D366; margin-bottom:30px;">Affiliate Network Disclosure</h2>
-      <p><strong>xyzsites</strong> operates as a central hub for multiple affiliate programs, including our partnerships with <strong>4aKid</strong>, <strong>Zalemart</strong>, and other brands.</p>
-      <p>This means our affiliates earn commissions by promoting approved product links. When you purchase through our links, the referring affiliate earns a commission at <strong>no extra cost to you</strong>.</p>
-
-      <h2>Our Network Structure & Commissions</h2>
-      <p>Commissions vary by brand and product category. All commissions are tracked and paid according to the specific program terms of each brand.</p>
-      <ul style="font-size:1.1rem; line-height:1.8;">
-        <li><strong>Direct Sales:</strong> Affiliates earn a percentage on purchases made through their unique links.</li>
-        <li><strong>Team Network:</strong> Team leaders may earn a percentage on sales from affiliates they recruit.</li>
-        <li><strong>Coupon Codes:</strong> Affiliates receive full credit for sales using their exclusive promo codes.</li>
-      </ul>
-      <p><em>Specific commission rates for each brand are provided to affiliates upon joining and are subject to change based on the brand's policies.</em></p>
-
-      <h2>Critical: Your Relationship with Brands</h2>
-      <p>All affiliates and customers under the xyzsites network must understand the following:</p>
-      <p><strong>xyzsites and its affiliates are INDEPENDENT PARTNERS.</strong> We are not the manufacturers, official stores, or customer support for the brands we promote (e.g., 4aKid or Zalemart).</p>
-      
-      <div class="highlight-box" style="background:rgba(255,107,107,0.15); padding:20px; border-radius:12px; border-left:5px solid #ff2e63; margin:25px 0;">
-        <strong>We are NOT responsible for:</strong><br>
-        • Product quality, safety, or authenticity<br>
-        • Shipping, handling, damages, or delays<br>
-        • Returns, refunds, or warranty claims<br>
-        • Stock availability or final pricing<br>
-        • The content on the brand's official website
-      </div>
-      <p>All orders are handled 100% by the respective brand. For any order-related issues, you must contact the brand's official support directly.</p>
-
-      <h2>WhatsApp Business Policy Compliance</h2>
-      <p><strong>This is mandatory for all affiliates in our network:</strong></p>
-      <ul style="font-size:1.1rem; line-height:1.8;">
-        <li>You <strong>must not</strong> impersonate xyzsites or any of our partner brands.</li>
-        <li>Your WhatsApp Business profile <strong>must</strong> use your own business name and state clearly that you are an "affiliate" or "authorized partner" of xyzsites.</li>
-        <li>You <strong>must</strong> be the first point of contact for your customers. Do not direct them to the brand's main support for order issues; handle the initial communication yourself as the seller of record.</li>
-      </ul>
-      <p>Violation of these transparency rules will lead to immediate termination from the network.</p>
-
-      <h2>Privacy Policy</h2>
-      <p>We are committed to your privacy:</p>
-      <ul style="font-size:1.1rem; line-height:1.8;">
-        <li>We do <strong>not</strong> directly collect or store sensitive personal data from end customers.</li>
-        <li>We do <strong>not</strong> process payments. All transactions are secure on the brand's official website.</li>
-        <li>Affiliate data is collected solely for network management and commission payments.</li>
-      </ul>
-
-      <h2>Contact the Network</h2>
-      <p>For questions about the xyzsites network, affiliate structure, or these terms:<br>
-      Email: <strong>nova.virell@gmail.com</strong></p>
-
-      <p style="text-align:center; margin-top:50px; opacity:0.7;">
-        <em>Last updated: November 2025</em>
-      </p>
-    </section>
-
-    <footer>
-      <p>© 2025 xyzsites Affiliate Network | A transparent platform for independent affiliates.</p>
-    </footer>
-  </div>
+    <div class="container">
+        <h1>@xyzsites</h1>
+        
+        <div class="grid">
+            <div class="folder-item">
+                <a href="Apks/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-apks">📱</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Apks <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 0 items</span>
+                            <span>💾 0</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="Audio/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-music">🎵</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Audio <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 0 items</span>
+                            <span>💾 0</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="Follow/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-folder">📁</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Follow <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 3 items</span>
+                            <span>💾 28K</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="Gallery/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-pics">🖼️</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Gallery <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 0 items</span>
+                            <span>💾 0</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="Islamic/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-thikr">🕌</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Islamic <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 2 items</span>
+                            <span>💾 2.3G</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="js/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-folder">📁</div>
+                    <div class="folder-info">
+                        <div class="folder-name">js <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 1 items</span>
+                            <span>💾 4.0K</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="Share_Files/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-folder">📁</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Share_Files <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 2 items</span>
+                            <span>💾 24K</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="Terms/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-folder">📁</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Terms <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 2 items</span>
+                            <span>💾 12K</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+            <div class="folder-item">
+                <a href="Videos/" class="folder-link" target="_blank" rel="noopener noreferrer">
+                    <div class="folder-icon icon-movies">🎬</div>
+                    <div class="folder-info">
+                        <div class="folder-name">Videos <span class="external-icon">↗️</span></div>
+                        <div class="folder-meta">
+                            <span>📄 2 items</span>
+                            <span>💾 25G</span>
+                        </div>
+                    </div>
+                    <div class="folder-arrow">→</div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Footer with Follow Me Section -->
+        <div class="footer-social">
+            <h3>🌟 Follow Me</h3>
+            <div class="social-tiles">
+                <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" class="tile youtube" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://web.whatsapp.com" target="_blank" class="tile whatsapp" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://instagram.com/YOUR_USER" target="_blank" class="tile instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com/YOUR_USER" target="_blank" class="tile facebook" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com/YOUR_USER" target="_blank" class="tile x" title="Twitter / X">
+                    <i class="fab fa-x-twitter"></i>
+                    <span>X / Twitter</span>
+                </a>
+                <a href="https://github.com/YOUR_USER" target="_blank" class="tile github" title="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <footer>
+                🔗 xyzsites@local.server
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
