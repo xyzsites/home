@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 9vw);  /* 3 columns, each 9vw wide */
+    grid-auto-rows: 9vh;                    /* each row 9vh tall */
+    gap: 20px;                              /* space between all */
+    justify-content: center;                /* center the grid horizontally */
+    align-content: center;                  /* center vertically on page */
+    min-height: 100vh;                      /* full viewport height */
+    margin: 0;                              /* remove default body margin */
+    padding: 20px;                          /* breathing room */
+}
+
+iframe {
+    border-radius: 25px;
+    width: 100%;        /* fill the grid cell */
+    height: 100%;       /* fill the grid cell */
+    border: none;       /* cleaner look, optional */
+}
