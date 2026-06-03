@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+    gap: 20px;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* keeps them square */
+    border-radius: 25px;
+}
