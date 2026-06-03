@@ -1,9 +1,9 @@
 body {
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(3, 9vw);  /* 3 columns, each 9vw wide */
-    grid-auto-rows: 9vh;                    /* each row 9vh tall */
-    gap: 20px;                              /* space between all */
+    grid-template-columns: repeat(4, 24vw);  /* 4 columns, each 9vw wide */
+    grid-auto-rows: 95vh;                    /* each row 9vh tall */
+    gap: 5px;                              /* space between all */
     justify-content: center;                /* center the grid horizontally */
     align-content: center;                  /* center vertically on page */
     min-height: 100vh;                      /* full viewport height */
@@ -12,7 +12,7 @@ body {
 }
 
 iframe {
-    border-radius: 25px;
+    border-radius: 5px;
     width: 100%;        /* fill the grid cell */
     height: 100%;       /* fill the grid cell */
     border: none;       /* cleaner look, optional */
