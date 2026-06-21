@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Dorks Cheat Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1em;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #4a9eff;
+            margin-bottom: 2em;
+            text-shadow: 0 0 10px rgba(74, 158, 255, 0.3);
+        }
+        .dork {
+            background: #2d2d2d;
+            border: 1px solid #444;
+            padding: 1.2em;
+            margin: 1em 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .dork:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            border-color: #555;
+        }
+        .dork h2 {
+            margin: 0 0 0.8em 0;
+            color: #4a9eff;
+            font-size: 1.2em;
+            border-bottom: 1px solid #444;
+            padding-bottom: 0.5em;
+        }
+        .dork p {
+            margin: 0.5em 0;
+        }
+        .dork strong {
+            color: #ff6b9d;
+        }
+        /* Scrollbar styling for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2d2d2d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Dorks Cheat Sheet</h1>
+
+    <div class="dork">
+        <h2>site:</h2>
+        <p><strong>Description:</strong> Search within a specific site</p>
+        <p><strong>Example:</strong> site:example.com</p>
+    </div>
+    
+    <div class="dork">
+        <h2>intitle:</h2>
+        <p><strong>Description:</strong> Search pages with keywords in the title</p>
+        <p><strong>Example:</strong> intitle:"login page"</p>
+    </div>
+    
+    <div class="dork">
+        <h2>inurl:</h2>
+        <p><strong>Description:</strong> Search pages with keywords in the URL</p>
+        <p><strong>Example:</strong> inurl:admin</p>
+    </div>
+    
+    <div class="dork">
+        <h2>filetype:</h2>
+        <p><strong>Description:</strong> Find specific file types</p>
+        <p><strong>Example:</strong> filetype:pdf hacking</p>
+    </div>
+    
+    <div class="dork">
+        <h2>ext:</h2>
+        <p><strong>Description:</strong> Alternative to filetype</p>
+        <p><strong>Example:</strong> ext:sql password</p>
+    </div>
+    
+    <div class="dork">
+        <h2>intext:</h2>
+        <p><strong>Description:</strong> Find pages with a word in the body text</p>
+        <p><strong>Example:</strong> intext:"index of /"</p>
+    </div>
+    
+    <div class="dork">
+        <h2>allinurl:</h2>
+        <p><strong>Description:</strong> All terms must be in URL</p>
+        <p><strong>Example:</strong> allinurl:admin login</p>
+    </div>
+    
+    <div class="dork">
+        <h2>allintitle:</h2>
+        <p><strong>Description:</strong> All terms must be in the title</p>
+        <p><strong>Example:</strong> allintitle:login panel</p>
+    </div>
+    
+    <div class="dork">
+        <h2>cache:</h2>
+        <p><strong>Description:</strong> View Google's cached version of a page</p>
+        <p><strong>Example:</strong> cache:example.com</p>
+    </div>
+    
+    <div class="dork">
+        <h2>link:</h2>
+        <p><strong>Description:</strong> Show pages that link to a URL</p>
+        <p><strong>Example:</strong> link:example.com</p>
+    </div>
+    
+    <div class="dork">
+        <h2>related:</h2>
+        <p><strong>Description:</strong> Find similar websites</p>
+        <p><strong>Example:</strong> related:github.com</p>
+    </div>
+    
+    <div class="dork">
+        <h2>inurl:admin intitle:login</h2>
+        <p><strong>Description:</strong> Find exposed login pages</p>
+        <p><strong>Example:</strong> inurl:admin intitle:login</p>
+    </div>
+    
+    <div class="dork">
+        <h2>inurl:/view/index.shtml</h2>
+        <p><strong>Description:</strong> Find exposed webcams</p>
+        <p><strong>Example:</strong> inurl:/view/index.shtml</p>
+    </div>
+    
+    <div class="dork">
+        <h2>intitle:"index of" inurl:ftp</h2>
+        <p><strong>Description:</strong> Find exposed FTP servers</p>
+        <p><strong>Example:</strong> intitle:"index of" inurl:ftp</p>
+    </div>
+    
+    <div class="dork">
+        <h2>filetype:sql intext:password</h2>
+        <p><strong>Description:</strong> Find database dumps</p>
+        <p><strong>Example:</strong> filetype:sql intext:password</p>
+    </div>
+    
+    <div class="dork">
+        <h2>ext:xml OR ext:conf OR ext:cnf intext:"password"</h2>
+        <p><strong>Description:</strong> Find config files</p>
+        <p><strong>Example:</strong> ext:xml OR ext:conf OR ext:cnf intext:"password"</p>
+    </div>
+    
+    <div class="dork">
+        <h2>inurl:wp-config.php.bak</h2>
+        <p><strong>Description:</strong> Find exposed WordPress config</p>
+        <p><strong>Example:</strong> inurl:wp-config.php.bak</p>
+    </div>
+    
+    <div class="dork">
+        <h2>intitle:"index of /" "parent directory"</h2>
+        <p><strong>Description:</strong> Find unsecured directories</p>
+        <p><strong>Example:</strong> intitle:"index of /" "parent directory"</p>
+    </div>
+    
+    <div class="dork">
+        <h2>intitle:"Dashboard [Jenkins]"</h2>
+        <p><strong>Description:</strong> Find open Jenkins dashboards</p>
+        <p><strong>Example:</strong> intitle:"Dashboard [Jenkins]"</p>
+    </div>
+    
+    <div class="dork">
+        <h2>filetype:xls intext:@gmail.com</h2>
+        <p><strong>Description:</strong> Find Excel files with contact data</p>
+        <p><strong>Example:</strong> filetype:xls intext:@gmail.com</p>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
