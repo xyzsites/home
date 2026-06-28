@@ -1,8 +1,251 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="refresh" content="0; url=100.html">
-</head>
-<body>
-</body>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/00.css" />
+    
+    <title>iqra</title>
+
+    
+<style>
+
+body {
+background-color: black;
+      }
+  
+.header-link {
+font-size: 16px;
+text-decoration: none;
+color: #ffd700;
+font-weight: bold;
+              }
+
+.name {
+font-size: 32px;
+font-weight: bold;
+color: #ffd700;
+border: 3px double #ffd700;
+padding: 5px 15px;
+       }
+
+.number {
+font-size: 16px;
+font-weight: bold;
+color: #ffd700;
+background: rgba(255,255,255,0.1);
+padding: 5px 15px;
+border-radius: 25px;
+ }
+
+/* Header */
+.header-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+border-bottom: 2px solid #ffd700;
+             }
+.original {
+  font-family: "Poppins", sans-serif;
+  line-height: 2em;
+  display: inline;
+  font-size: 16px;
+  color: white;
+}
+
+.extra {
+  display: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  line-height: 2em;
+  display: inline;
+  font-size: 16px;
+  color: white;
+}
+
+ .high1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+    background: #333;
+    padding: 2px 10px;
+    border-radius: 20px;
+    display: inline-block;
+ }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  border: 3px solid #ffd700; 
+}
+  
+ .high2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd700;
+    background: #333;
+    padding: 2px 10px;
+    border-radius: 20px;
+    display: inline-block;
+ }
+
+ .high3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+    background: #333;
+    padding: 2px 10px;
+    border-radius: 20px;
+    display: inline-block;
+ }
+
+input[type="checkbox"] {
+  height: 2em;
+  display: block;
+  appearance: none;
+}
+label {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding: 1em;
+  background-color: #ffd700;
+  color: black;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+label:before {
+  content: "Read More";
+}
+input[type="checkbox"]:checked ~ label:before {
+  content: "Read Less";
+}
+.dots:has(~ input[type="checkbox"]:checked) {
+  display: none;
+}
+.extra:has(~ input[type="checkbox"]:checked) {
+  display: inline;
+}
+
+
+ /* Footer */
+ .footer {
+    text-align: center;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+ }
+
+ .footer-text {
+    font-size: 20px;
+    color: #cbd5e1;
+ }
+
+.space1 {
+  height: 50px;
+}
+.space2 {
+  width: 150px;
+}
+   /* Arrow Navigation at Top of Center Content */
+
+ .nav-arrows {
+              display: flex;
+              justify-content: center;
+              gap: 0px;
+              margin-bottom: 0px;
+              }
+
+ .nav-btn {
+           display: inline-flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 24px;
+           text-decoration: none;
+           background: rgba(255,255,255,0.08);
+           color: #bbf7d0;
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           transition: all 0.2s ease;
+           backdrop-filter: blur(4px);
+           opacity: 0.55;
+           font-weight: bold;
+           }
+
+    .nav-btn:hover {
+    opacity: 1;
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.08);
+ }
+
+ .nav-btn:active {
+    transform: scale(0.96);
+ }
+
+ .nav-arrows {
+    gap: 25px;
+ }
+
+  
+</style>
+ 
+  </head>
+  <body>
+
+  <div class="header-row">
+    <a class="header-link" href="https://radio.garden/listen/radio-786-fm-100-4/8Nn9iBqd" target="_blank">786</a>
+    <span class="name">الصَّبُورُ</span>
+    <span class="number">99</span>
+  </div>
+
+    <div class="container">
+      <p class="original">
+ 
+        <div class="center">
+        <span class="high2">As-Sabur:</span> <div class="space2"></div> <span class="high2">The Most Forebearing</span>
+        </div>
+
+       <div class="space1"></div>
+
+      <p class="original">
+      
+        <span class="high1">Allah (SWT)</span> is the most patient
+        one in His creation. Nothing is either bigger or smaller,
+        better or worse, earlier or later than it is determined for it to be.
+        <br>
+
+      </p>
+
+      <!-- <span class="dots">...</span> -->
+
+     <div class="nav-arrows">
+      <a href="099.html" class="nav-btn" id="prevBtn" style="opacity:0.95">←</a>
+       <div class="space2"></div>
+      <a href="099.html" class="nav-btn" id="nextBtn" style="opacity:0.95">→</a>
+     </div>
+
+
+
+
+      <p class="extra">
+      <br>
+      Anyone who repeats this Name 100 times before sunrise,
+      will be safeguarded against all calamities for the remainder of
+      the day.
+      Moreover, <span class="highlight">Allah</span> will
+      cause his enemies not to utter a single word against him.
+      Any person in difficulty should repeat this Ism 1,020 times:
+      he will soon find relief & be granted peace & contentment of heart.<br>
+      Insha Allah.. Ameen.
+      </p>
+
+      <input type="checkbox" id="btn" />
+      <label for="btn"></label>
+
+
+    </div>
+  </body>
 </html>
